@@ -18,3 +18,11 @@ By manually adding files to the staging area before a commit, we make sure that 
 #### What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 If one wants to do something experimental, while still having the regular working code available, branching is good. While working on a branch, one can easily switch to the master-branch if needed.
+
+#### How do the diagrams help you visualize the branch structure?
+
+One can see where each branch splits of from.
+
+#### What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+We combine the code from the two branches. Git tries its best to the this automaticly, by looking at the changes in the files, and their mutual ancestor. But sometimes merge conflicts happen. Git warns about this, and one can use `git mergetool` to help with this.
