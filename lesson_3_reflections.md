@@ -23,3 +23,9 @@ Clones are copies of a repository, either from an online server, or a local one.
 #### Branches
 
 Branches are a split of the code, where one might want to temporary go in different directioon, try out some new features or rewrites, without modifying the master-branch. One can create and switch branches easily, and later combine the brancshes when the time is right.
+
+#### What is the benefit of having a copy of the last known state of the remote stored locally?
+
+It means we know if the remote has changes, and we can update or continue working on this version. Merging can be done at a later time, but will sometimes cause mergeconflicts.
+
+It also means that one can work offline with that version retrieved.
