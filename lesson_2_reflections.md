@@ -1,6 +1,6 @@
 #### What happens when you initialize a repository? Why do you need to do it?
 
-It makes git keep track of my files. I need it to make git track this project.
+It makes **git** keep track of my files. I need it to make **git** track this project.
 
 #### How is the staging area different from the working directory and the repository? What value do you think it offers?
 
@@ -25,4 +25,10 @@ One can see where each branch splits of from.
 
 #### What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-We combine the code from the two branches. Git tries its best to the this automaticly, by looking at the changes in the files, and their mutual ancestor. But sometimes merge conflicts happen. Git warns about this, and one can use `git mergetool` to help with this.
+We combine the code from the two branches. **Git** tries its best to the this automaticly, by looking at the changes in the files, and their mutual ancestor. But sometimes merge conflicts happen. **Git** warns about this, and one can use `git mergetool` to help with this.
+
+#### What are the pros and cons of **Git**’s automatic merging vs. always doing merges manually?
+
+Pro: Combining merges manually would be a pain. Via a simple command, **git** can do this for us.
+
+Con: Sometimes conflicts arises, and we need to go through them. **Git** however marks these conflicts for us, so it is much easier to deal with.
