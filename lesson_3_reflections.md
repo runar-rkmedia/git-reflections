@@ -35,3 +35,9 @@ It also means that one can work offline with that version retrieved.
 For coding I would try to make a strong case for using some kind of version-control-system, preferably git. It makes it so much easier when people are working on the same file.
 
 If everybody are assigned different files, we could just used a shared DropBox-folder, and that would probably work really well. But I think all who have tried this approach have seen how bad DropBox is at conflictresolutions. Even when I just want to switch computers and sync my work to my other mac, DropBox sometimes makes mistakes and I end up with wierd copies of files which are a pain to go through.
+
+#### When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+When working with others, it is important that the maintainer reviews the changes that has happened, especially on the master-branch, since this is the code that users will see. Therefore, changes needs to go through a branch and a pull requesst first, before getting into master.
+
+Also, as noted earlier, when working on experimental features, or rewrites and refactoring, using brancshes can be helpful even if one is working alone on the project.
